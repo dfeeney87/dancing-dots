@@ -1,9 +1,7 @@
 import React, { Fragment, Component } from 'react';
-import App from './App'
-
 import {Route, Link} from 'react-router-dom';
 import ViewPort from './ViewPort';
-import Confused from './Confused';
+import Home from './Home';
 
 export default class MyRouter extends Component {
     render() {
@@ -18,7 +16,7 @@ export default class MyRouter extends Component {
                     </li>
                 </ul>
                 <main>
-                <Route exact path={'/'} component={Confused}/>
+                <Route exact path={'/'} component={Home}/>
                 <Route path={'/dotFactory'} component={ViewPort}/>
                 </main>
          </Fragment>
